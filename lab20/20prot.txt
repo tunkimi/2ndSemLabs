@@ -1,0 +1,25 @@
+mkdir labka
+cd labka
+echo "Hello, labka">f1.txt | echo "Hellof, tunkimi">f2.txt | cat f1.txt f2.txt >> f3.txt| echo "xyn(x)=yuh">f4.txt
+echo -e "Is it a bird?\nNof\nIs it a planef?\nNo, it's a labka-stavka number 20" >> f3.txt
+sort -r f3.txt | cat f3.txt | tr -s '\r\n' ' ' > f4.txt | cat f4.txt | xargs -n1 -d ' ' touch | find . -name "*f*" -print0 | xargs -n1 -0 rm -rf
+du .>f1.txt
+df -k -h .>f2.txt
+comm f1.txt f2.txt
+wc f2.txt f2.txt
+diff -d --minimal f1.txt f2.txt
+sort -f f1.txt f2.txt
+tail -v f1.txt f2.txt
+echo "Hello"|tee -a f1.txt f2.txt
+uniq -c f1.txt
+od f1.txt f2.txt
+sum f1.txt f2.txt
+head f2.txt f1.txt
+gzip -v f1.txt|ls
+gzip -d f1.txt
+bzip2 -v f2.txt|ls
+bzip2 -d f2.txt.bz2
+paste -s f1.txt f2.txt 
+cd ..
+rm -r labka
+echo "ne boleyte++"
