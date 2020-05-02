@@ -41,12 +41,6 @@ void addTree(comp *root, int key){
         }
     }
 }
-int lin(comp *root){
-    if(root -> lt != NULL && root -> rt != NULL) return 0;
-    if(root -> lt != NULL) return lin(root->lt);
-    if(root -> rt != NULL) return lin(root->rt);
-    return 1;
-}
 void printTree(comp *root){
     if (root -> lt != NULL){
         printTree(root->lt);
@@ -84,7 +78,7 @@ int main(){
     int *wide;
     comp *root;
     while (choise){
-        printf("Пожалуйста, выберите действие:\n1. Создать дерево\n2. Добавить к дереву элемент\n3. Текстовый вывод дерева\n4. Узнать глубину дерева\n5. Узнать ширину каждого уровня дерева\n6. Проверить монотонность ширины дерева\n7. Проверить, не является ли списком\n8. Удалить дерево\n0. Завершить программу\n");
+        printf("Пожалуйста, выберите действие:\n1. Создать дерево\n2. Добавить к дереву элемент\n3. Текстовый вывод дерева\n4. Узнать глубину дерева\n5. Узнать ширину каждого уровня дерева\n6. Проверить монотонность ширины дерева\n7. Удалить дерево\n0. Завершить программу\n");
         scanf("%d", &choise);
         switch (choise){
         case 0:
@@ -138,13 +132,6 @@ int main(){
             }
             break;
         case 7:
-            if(lin(root)){
-                printf("Дерево является линейным списком вершин\n");
-            }else{
-                printf("Дерево не является линейным списком вершин\n");
-            }
-            break;
-        case 8:
             deleteTree(root);
             break;
         default:
