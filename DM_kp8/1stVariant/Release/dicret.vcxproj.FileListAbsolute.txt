@@ -1,0 +1,4 @@
+D:\Desktop\Projects\dicret\dicret\Release\dicret.vcxprojAssemblyReference.cache
+D:\Desktop\Projects\dicret\dicret\Release\dicret.Form2.resources
+D:\Desktop\Projects\dicret\dicret\Release\dicret.MyForm.resources
+D:\Desktop\Projects\dicret\dicret\Release\dicret.vcxproj.GenerateResource.cache

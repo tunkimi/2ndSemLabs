@@ -1,0 +1,9 @@
+﻿  Form2.cpp
+D:\Desktop\Projects\dicret\dicret\Form2.h(317,76): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Desktop\Projects\dicret\dicret\Form2.h(317,58): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  MyForm.cpp
+D:\Desktop\Projects\dicret\dicret\Form2.h(317,76): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+D:\Desktop\Projects\dicret\dicret\Form2.h(317,58): warning C4244: аргумент: преобразование "float" в "int", возможна потеря данных
+  Создание кода...
+  Form2.obj : обнаружен модуль MSIL; для MSIL последовательная компоновка отключена; выполняется полная компоновка
+  dicret.vcxproj -> D:\Desktop\Projects\dicret\Release\dicret.exe

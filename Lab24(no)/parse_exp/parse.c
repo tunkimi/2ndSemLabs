@@ -51,11 +51,11 @@ cell *parse(cell *tmp)
     {
         int val = symbol;
         pos++;
-        if ((val > 47) && (val < 58))
+        if ((val > 47) && (val < 58))//цифры
         {
             parse_num(1);
         }
-        else if (((val > 39) && (val < 44)) || (val == 47) || (val == 94) || ((val > 96) && (val < 123)))
+        else if (((val > 39) && (val < 44))/*скобки, знаки*/ || (val == 47)/* / */ || (val == 94)/* ^ */ || ((val > 96) && (val < 123))/*a-z*/)
         {
             add_char;
         }
