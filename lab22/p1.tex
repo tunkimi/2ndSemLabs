@@ -1,0 +1,30 @@
+\texttt{Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,о}. Случай \textit{h}=0 очевиден. Для \textsl{h}>0, соответственно, \textit{h}<0, утверждение очевидным образом следует из теоремы 177, соответственно 178, с заменой \textit{n} на \textit{n}+1, так как, по теореме 170, 
+\[
+(x^\mathit{v})^{(n+1)}=0\,\,\,при\,\,\,0\leqslant \mathit{v} \leqslant n
+\]
+и потому
+\[
+\mathit{f}^{(n+1)}(x)=0
+\]
+
+\textbf{Теорема 180} (биномальная теорема). \textit{Для всех целых n>=0}
+\[
+(a+b)^n=\sum\limits^{n}_{\mathit{y}=0} {(\frac{n}{\mathit{y}})a^{n-\mathit{y}}b^\mathit{y}}
+\]
+
+\texttt{Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,а}. 1) Теорема 179 с
+\[
+\mathit{f}(x)=x^n,\,\,\,\xi=a,\,\,\,h=b
+\]
+в силу теоремы 170, дает:
+\[
+(a+b)^n=\sum\limits^{n}_{\mathit{y}=0} {\frac{1}{\mathit{y}!}(\frac{n}{\mathit{y}})a^{n-\mathit{y}}b^\mathit{y}}
+\]
+
+2) (непосредственно:) для \textit{n=0} --- ясно;  из \textit{n} следует \textit{n}+1, так как тогда, в силу теоремы 172,
+\[
+(a+b)^{n+1}=(a+b)^n(a+b)=\sum\limits^{n}_{\mathit{y}=0} {(\frac{n}{\mathit{y}})a^{n-\mathit{y}}b^\mathit{y}}(a+b)=
+\]\[=\sum\limits^{n}_{\mathit{y}=0} {(\frac{n}{\mathit{y}})a^{n-+1\mathit{y}}b^\mathit{y}}+\sum\limits^{n}_{\mathit{y}=0} {(\frac{n}{\mathit{y}})a^{n-\mathit{y}}b^{\mathit{y}+1}}=
+\]\[=\sum\limits^{n}_{\mathit{y}=0} {(\frac{n}{\mathit{y}})a^{n-+1\mathit{y}}b^\mathit{y}}+\sum\limits^{n+1}_{\mathit{y}=1} {(\frac{n}{\mathit{y}-1})a^{n+1-\mathit{y}}b^{\mathit{y}}}=
+\]\[=a^{n+1}\sum\limits^{n}_{\mathit{y}=1}{((\frac{n}{\mathit{y}})+(\frac{n}{\mathit{y}-1}))a^{n+1-\mathit{y}}+b^{n+1}}=
+\]

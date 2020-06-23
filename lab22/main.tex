@@ -1,0 +1,109 @@
+\documentclass{book}
+\usepackage[warn]{mathtext}
+\usepackage[utf8]{inputenc}
+\usepackage[a5paper, left=1cm, top=0.5cm, right=1.5cm, bottom=20mm, nohead, nofoot]{geometry}
+\usepackage{amssymb}
+\usepackage[english,russian]{babel}
+
+
+
+\usepackage{fancybox,fancyhdr}  %вехний и нижний колонтитулы
+\pagestyle{fancy}
+\fancyhead[R]{}                 %верхний
+\fancyhead[L]{\textsl{\thepage}}
+\fancyhead[C]{\textit{Глава 10}}
+\fancyfoot[R]{}                 %нижний
+\fancyfoot[L]{}
+\fancyfoot[C]{}
+
+\title{лаба}
+\setcounter{page}{144}
+
+\setlength{\headheight}{40pt}
+
+\begin{document}
+\texttt{Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,о}. Случай \textit{h}=0 очевиден. Для \textsl{h}>0, соответственно, \textit{h}<0, утверждение очевидным образом следует из теоремы 177, соответственно 178, с заменой \textit{n} на \textit{n}+1, так как, по теореме 170, 
+\[
+(x^\mathit{v})^{(n+1)}=0\,\,\,при\,\,\,0\leqslant \mathit{v} \leqslant n
+\]
+и потому
+\[
+\mathit{f}^{(n+1)}(x)=0
+\]
+
+\textbf{Теорема 180} (биномальная теорема). \textit{Для всех целых n>=0}
+\[
+(a+b)^n=\sum\limits^{n}_{\nu=0} {(\frac{n}{\nu})a^{n-\nu}b^\nu}
+\]
+
+\texttt{Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,а}. 1) Теорема 179 с
+\[
+\mathit{f}(x)=x^n,\,\,\,\xi=a,\,\,\,h=b
+\]
+в силу теоремы 170, дает:
+\[
+(a+b)^n=\sum\limits^{n}_{\nu=0} {\frac{1}{\nu!}(\frac{n}{\nu})a^{n-\nu}b^\nu}
+\]
+
+2) (непосредственно:) для \textit{n=0} --- ясно;  из \textit{n} следует \textit{n}+1, так как тогда, в силу теоремы 172,
+\[
+(a+b)^{n+1}=(a+b)^n(a+b)=\sum\limits^{n}_{\nu=0} {(\frac{n}{\nu})a^{n-\nu}b^\nu}(a+b)=
+\]\[=\sum\limits^{n}_{\nu=0} {(\frac{n}{\nu})a^{n-+1\nu}b^\nu}+\sum\limits^{n}_{\nu=0} {(\frac{n}{\nu})a^{n-\nu}b^{\nu+1}}=
+\]\[=\sum\limits^{n}_{\nu=0} {(\frac{n}{\nu})a^{n-+1\nu}b^\nu}+\sum\limits^{n+1}_{\nu=1} {(\frac{n}{\nu-1})a^{n+1-\nu}b^{\nu}}=
+\]\[=a^{n+1}\sum\limits^{n}_{\nu=1}{((\frac{n}{\nu})+(\frac{n}{\nu-1}))a^{n+1-\nu}+b^{n+1}}=
+\]
+\newpage
+
+\fancyhead[L]{}                 %верхний
+\fancyhead[R]{\textsl{\thepage}}
+\fancyhead[C]{\textit{Производгые высших порядков}}
+(последнее \(\sum\) при \textit{n}=0 означает 0)
+\[
+= \sum\limits^{n+1}_{\nu=0}(\frac{n+1}{\nu})a^{n+1-\nu}b^\nu
+\]
+
+3) В силу теоремы 173 с 
+\[
+\mathit{f}(x)=e^{ax}, {g}(x)=e^{bx}
+\]
+и теоремы 174, имеем:
+\[
+(a+b)^ne^{(a+b)x}=(e^{(a+b)x})^{(n)}=(e^{ax}e^{bx})^{(n)}=
+\]
+\[
+=\sum\limits^n_{\nu=0}(\frac{n}{\nu})(e^{ax})^{(n-\nu)}(e^{bx})^{(\nu)}=\sum\limits^n_{\nu=0}(\frac{n}{\nu})a^{n-\nu}e^{ax}b^\nu e^{bx}=
+\]
+\[
+=\sum\limits^n_{\nu=0}(\frac{n}{\nu})a^{n-\nu}b^\nu \cdot e^{(a+b)x}
+\]
+
+\textbf{Теорема 181.} \textit{Для каждого целого m $\geqslant$ 0\,\,и\,\, x>0\,\,существует\,\,\nu\,\,такое, что}
+
+\[
+1<\nu<1+x,\,\,\sqrt{1+x}=\sum\limits^m_{\nu=0}(\frac{\frac{1}{2}}{\nu})x^\nu+(\frac{\frac{1}{2}}{m+1})\frac{x^{m+1}}{\nu^{m+\frac{1}{2}}}
+\]
+
+\texttt{Д\,о\,к\,а\,з\,а\,т\,е\,л\,ь\,с\,т\,в\,о.} Для
+
+\[
+\mathit{f}(x)=x^\frac{1}{2}\,\,\,(x>0)
+\]
+при целом $\nu\geqslant$0 имеем, по теореме 171, 
+
+\[
+\mathit{f}^{(\nu)}(x)=(\frac{\frac{1}{2}}{\nu})\nu!x^{\frac{1}{2}-\nu}.
+\]
+Следовательно, теорема 177 с $\xi=1, h=x, n=m+1$ обеспечивает существование $\nu$ такого, что
+
+\[
+1<\nu<1+x,
+\]
+\[
+\sqrt{1+x}=\sum\limits^m_{\nu=0} \frac{1}{\nu!}()\frac{\frac{1}{2}{\nu}}\nu!x^\nu+
+\]
+\[
++\frac{m^{m+1}}{(m+1)!}(\frac{\frac{1}{2}}{m+1})(m+1)!\nu^{\frac{1}{2}-m-1}.
+\]
+
+10\scriptsize{Зак. 848}
+\end{document}
